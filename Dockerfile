@@ -21,7 +21,7 @@ USER spring:spring
 
 COPY --from=build /app/build/libs/*.jar app.jar
 
-EXPOSE 8081
+EXPOSE 8081 10000
 
 # Opciones JVM para contenedores (memoria adaptativa)
 ENV JAVA_OPTS="-XX:MaxRAMPercentage=75.0 -XX:+UseG1GC"
