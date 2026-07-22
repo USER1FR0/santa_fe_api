@@ -1,0 +1,63 @@
+# --- Gradle / Build ---
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+.kotlin
+out/
+bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# --- Secrets / config local (NUNCA subir) ---
+.env
+.env.*
+!.env.example
+application-local.properties
+application-*-local.properties
+src/main/resources/application-local.properties
+src/main/resources/application-*-local.properties
+*.pem
+*.key
+*.p12
+*.jks
+
+# --- Logs ---
+*.log
+logs/
+
+# --- IDE: IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# --- IDE: Eclipse ---
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# --- IDE: NetBeans ---
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# --- IDE: VS Code ---
+.vscode/
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Reportes ---
+/dependency-check-report.*
+/build/reports/

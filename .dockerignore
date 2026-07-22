@@ -1,0 +1,15 @@
+.git
+.gitignore
+.gradle
+.idea
+.vscode
+build
+out
+test-data
+*.md
+*.log
+.env
+.env.*
+!.env.example
+application-local.properties
+src/main/resources/application-local.properties

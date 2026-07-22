@@ -1,0 +1,3057 @@
+[
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "81db9b9d-f0d8-4ae9-885b-8bf5511b4d2d",
+    "total": 5414.83,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 1 #123, Col. Centro",
+    "latitud": 19.999121,
+    "longitud": -99.112213,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 1,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 219.07
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 36.85
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 322.21
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "6f3ff20d-da18-4e1b-b9a3-73a44e4a561f",
+    "total": 4745.08,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 2 #123, Col. Centro",
+    "latitud": 19.97484,
+    "longitud": -99.244665,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 2,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 416.96
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 263.4
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 30.8
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "c66476d6-1473-4494-a2e9-4c5b9da44fdc",
+    "total": 999.24,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 3 #123, Col. Centro",
+    "latitud": 19.766251,
+    "longitud": -99.091488,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 3,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 35.59
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 210.21
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 43.64
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "ee7848cc-0457-46b2-97b8-85e9aca05f8a",
+    "total": 1400.52,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 4 #123, Col. Centro",
+    "latitud": 19.322614,
+    "longitud": -99.073027,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 4,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 350.13
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "d91b0d49-a34c-4a21-9e2e-83de4248d3a2",
+    "total": 9426.42,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 5 #123, Col. Centro",
+    "latitud": 19.533311,
+    "longitud": -99.138808,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 5,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 466.71
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 102.34
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 494.7
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "6a10dff7-a59f-4932-9c68-5e7100237ba0",
+    "total": 1077.72,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 6 #123, Col. Centro",
+    "latitud": 19.775819,
+    "longitud": -99.497124,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 6,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 359.24
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "55a5077e-e7db-4684-ab40-c3a0144bb7ee",
+    "total": 2978.88,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 7 #123, Col. Centro",
+    "latitud": 19.684219,
+    "longitud": -99.423481,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 7,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 496.48
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "7f836790-2223-45ce-aff3-dbdeae4ff412",
+    "total": 1111.02,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 8 #123, Col. Centro",
+    "latitud": 19.878053,
+    "longitud": -99.324994,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 8,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 185.17
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "b88dccde-5b96-45b9-9c11-3fd94ce4c3f4",
+    "total": 6548.87,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 9 #123, Col. Centro",
+    "latitud": 19.129829,
+    "longitud": -99.466541,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 9,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 394.46
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 246.16
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 403.28
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 153.41
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "d3883b85-a8d8-4fba-8d01-17fe9c966a67",
+    "total": 2651.4,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 10 #123, Col. Centro",
+    "latitud": 19.269545,
+    "longitud": -99.43578,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 10,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 275.93
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 168.03
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "0831c0c6-0628-4c57-9348-dc6fa7698ce4",
+    "total": 133.17,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 11 #123, Col. Centro",
+    "latitud": 19.591555,
+    "longitud": -99.492774,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 11,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 133.17
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "83ef2e64-a611-4002-bbaf-b1e2ad2c36f4",
+    "total": 1668.03,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 12 #123, Col. Centro",
+    "latitud": 19.226656,
+    "longitud": -99.10803,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 12,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 238.29
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "9373b60c-c705-46dd-b970-1e4a665356b4",
+    "total": 2688.64,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 13 #123, Col. Centro",
+    "latitud": 19.72047,
+    "longitud": -99.013008,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 13,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 430.52
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 134.01
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "d8995319-f137-426b-8e48-8d5ed4d4b670",
+    "total": 5317.72,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 14 #123, Col. Centro",
+    "latitud": 19.985608,
+    "longitud": -99.486917,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 14,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 194.42
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 358.5
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 261.38
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "9f5027d4-5d1c-47df-852e-e6b7e34b995b",
+    "total": 3058.54,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 15 #123, Col. Centro",
+    "latitud": 19.306968,
+    "longitud": -99.315606,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 15,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 69.93
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 249.91
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "7ab12935-696b-4519-ba35-37c8cba6052d",
+    "total": 3673.91,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 16 #123, Col. Centro",
+    "latitud": 19.287294,
+    "longitud": -99.110173,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 16,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 151.56
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 308.33
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "d3026c24-805f-44e8-82b1-2ada3814c283",
+    "total": 1702.35,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 17 #123, Col. Centro",
+    "latitud": 19.459221,
+    "longitud": -99.15417,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 17,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 359.56
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 37.73
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "605f557d-5b7d-4c55-ae6f-e80d5b42aa3c",
+    "total": 1309.85,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 18 #123, Col. Centro",
+    "latitud": 19.321187,
+    "longitud": -99.368685,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 18,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 148.52
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 193.75
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 31.23
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "acea5395-ca3a-4074-bee2-ac8e3a99eb60",
+    "total": 6335.16,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 19 #123, Col. Centro",
+    "latitud": 19.547568,
+    "longitud": -99.08386,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 19,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 417.38
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 340.7
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 307.28
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "598a6d99-b516-4b82-94f7-04d3d58c5545",
+    "total": 5588.11,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 20 #123, Col. Centro",
+    "latitud": 19.075541,
+    "longitud": -99.475653,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 20,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 227.43
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 116.81
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 339.02
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "3257a6a4-eb29-4257-ba62-9a168e25dfe1",
+    "total": 4623.73,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 21 #123, Col. Centro",
+    "latitud": 19.436004,
+    "longitud": -99.094652,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 21,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 299.51
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 251.04
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 63.84
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 473.06
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "aad42fe7-31d1-493d-8110-b4294494dc0a",
+    "total": 436.86,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 22 #123, Col. Centro",
+    "latitud": 19.806418,
+    "longitud": -99.116691,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 22,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 436.86
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "aa92a284-3b6f-47ca-8c46-8b0d08679535",
+    "total": 3196.7,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 23 #123, Col. Centro",
+    "latitud": 19.61335,
+    "longitud": -99.069172,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 23,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 159.92
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 171.34
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 162.75
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 72.82
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "a86f715b-532d-4a6b-a1d2-b140703f0356",
+    "total": 9775.92,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 24 #123, Col. Centro",
+    "latitud": 19.651418,
+    "longitud": -99.437688,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 24,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 268.44
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 336.58
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 302.81
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 481.86
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "50a85132-c701-49cf-8f88-d0eae2047a56",
+    "total": 4193.19,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 25 #123, Col. Centro",
+    "latitud": 19.493153,
+    "longitud": -99.27828,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 25,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 364.86
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 116.91
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 115.96
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 28.24
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "d88d12b1-25c2-4e3b-bdd4-fab6987c3ad2",
+    "total": 986.72,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 26 #123, Col. Centro",
+    "latitud": 19.359273,
+    "longitud": -99.245453,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 26,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 140.96
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "22ae3ad0-263f-423d-97e2-d7957e629461",
+    "total": 1132.56,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 27 #123, Col. Centro",
+    "latitud": 19.086936,
+    "longitud": -99.020177,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 27,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 377.52
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "de781d5f-6b61-4267-88a6-40204a5566c9",
+    "total": 3495.66,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 28 #123, Col. Centro",
+    "latitud": 19.589805,
+    "longitud": -99.1427,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 28,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 365.78
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 198.86
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 217.83
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "5bbeafcc-9c09-4b6a-a9e3-3a5087fbb509",
+    "total": 2302.46,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 29 #123, Col. Centro",
+    "latitud": 19.493899,
+    "longitud": -99.212082,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 29,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 232.58
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 209.24
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "0290afe3-6e03-4852-bc4a-a0ff1a784437",
+    "total": 1094.94,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 30 #123, Col. Centro",
+    "latitud": 19.942098,
+    "longitud": -99.208835,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 30,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 182.49
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "aba67cef-a1ed-4808-a7f6-8696f41fe514",
+    "total": 6017.57,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 31 #123, Col. Centro",
+    "latitud": 19.20379,
+    "longitud": -99.461692,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 31,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 319.71
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 494.27
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "4eb501d0-8850-4d5b-93f1-233a2a72696f",
+    "total": 891.63,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 32 #123, Col. Centro",
+    "latitud": 19.754426,
+    "longitud": -99.202332,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 32,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 40.83
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 58.24
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "f1834640-e3be-42c5-89ba-d6717225119f",
+    "total": 4817.74,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 33 #123, Col. Centro",
+    "latitud": 19.485783,
+    "longitud": -99.363655,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 33,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 227.56
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 282.46
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "805bdc77-a643-4210-8fde-9e11949ef7f7",
+    "total": 2178.43,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 34 #123, Col. Centro",
+    "latitud": 19.611458,
+    "longitud": -99.205423,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 34,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 100.97
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 296.78
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "497afdd5-967f-43fe-a4f1-bb835332aea5",
+    "total": 1021.23,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 35 #123, Col. Centro",
+    "latitud": 19.362841,
+    "longitud": -99.455713,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 35,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 340.41
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "a2199700-aa7a-4d80-b58d-331d4d6fce66",
+    "total": 4732.12,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 36 #123, Col. Centro",
+    "latitud": 19.074289,
+    "longitud": -99.268609,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 36,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 184.46
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 457.05
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 177.92
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "a74b203a-eb21-42b6-8b97-dfcd7035f92b",
+    "total": 9005.03,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 37 #123, Col. Centro",
+    "latitud": 19.896496,
+    "longitud": -99.322371,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 37,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 135.84
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 286.05
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 175.61
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 486.78
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "42ca62e1-ecad-4395-8d01-095c14328106",
+    "total": 6984.74,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 38 #123, Col. Centro",
+    "latitud": 19.448486,
+    "longitud": -99.455753,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 38,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 81.07
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 297.63
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 351.11
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 237.84
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "bd9c06c4-bae2-4908-a48b-60f70b7fd0fd",
+    "total": 3337.2,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 39 #123, Col. Centro",
+    "latitud": 19.933601,
+    "longitud": -99.174181,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 39,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 19.77
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 438.93
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 150.24
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "00bafbfa-1cc1-4fb5-8a2f-e9954c8ca264",
+    "total": 3319.05,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 40 #123, Col. Centro",
+    "latitud": 19.328639,
+    "longitud": -99.361967,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 40,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 207.13
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 363.72
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "0fe8fe3a-7906-4cbf-9df7-e6eade230e9a",
+    "total": 5907.84,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 41 #123, Col. Centro",
+    "latitud": 19.955518,
+    "longitud": -99.266274,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 41,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 104.99
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 258.98
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 254.28
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 82.93
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "ff7c686a-20b4-4cd3-94c2-4f5e7effda97",
+    "total": 3483.03,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 42 #123, Col. Centro",
+    "latitud": 19.961159,
+    "longitud": -99.286127,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 42,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 242.33
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 287.19
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 251.69
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "aafacb2c-3d06-412f-a78b-91ceb2da0124",
+    "total": 1712.09,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 43 #123, Col. Centro",
+    "latitud": 19.594421,
+    "longitud": -99.412898,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 43,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 235.21
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 89.34
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "4c792ef6-5475-43f2-b0ee-c4021ea38df6",
+    "total": 2086.74,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 44 #123, Col. Centro",
+    "latitud": 19.382852,
+    "longitud": -99.324021,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 44,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 347.79
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "3bd51d23-0cb3-4b59-a6c0-83f2f095e11d",
+    "total": 4642.28,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 45 #123, Col. Centro",
+    "latitud": 19.700012,
+    "longitud": -99.289701,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 45,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 52.23
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 243.08
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 383.07
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 397.44
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "767170a9-d7a7-4b6d-84fc-a456b4476f17",
+    "total": 1255.37,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 46 #123, Col. Centro",
+    "latitud": 19.239301,
+    "longitud": -99.267305,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 46,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 55.41
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 285.61
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 14.38
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "224ee135-4e2f-4368-a9df-0001a751a91f",
+    "total": 1976.67,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 47 #123, Col. Centro",
+    "latitud": 19.685306,
+    "longitud": -99.062151,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 47,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 89.55
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 189.24
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 293.93
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "f29d4625-ef73-4182-bbcd-af8c49a0dca7",
+    "total": 5636.02,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 48 #123, Col. Centro",
+    "latitud": 19.132498,
+    "longitud": -99.489377,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 48,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 406.17
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 439.33
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 17.67
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "af88bbf9-4694-4ace-8d77-568890fd35b8",
+    "total": 11529.1,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 49 #123, Col. Centro",
+    "latitud": 19.098456,
+    "longitud": -99.4973,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 49,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 487.73
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 391.91
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 333.31
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 335.47
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "b89d2f2e-e845-4e72-9b79-45ca2a05cd80",
+    "total": 681.17,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 50 #123, Col. Centro",
+    "latitud": 19.544056,
+    "longitud": -99.457228,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 50,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 114.65
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 13.49
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "10cee72b-9f93-4689-b215-cbf285fd6f08",
+    "total": 2906.64,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 51 #123, Col. Centro",
+    "latitud": 19.721032,
+    "longitud": -99.304651,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 51,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 205.98
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 312.79
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "c23d4e5d-5187-4215-8298-1c81ce24dd79",
+    "total": 6477.68,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 52 #123, Col. Centro",
+    "latitud": 19.996007,
+    "longitud": -99.013841,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 52,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 448.37
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 468.42
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "139dc7ea-2956-4857-b7bb-2255081d0cc5",
+    "total": 2275.15,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 53 #123, Col. Centro",
+    "latitud": 19.739532,
+    "longitud": -99.1354,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 53,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 108.35
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 130.0
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "b88439dc-4480-4356-acff-44fd7f199fd6",
+    "total": 7591.34,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 54 #123, Col. Centro",
+    "latitud": 19.780132,
+    "longitud": -99.098936,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 54,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 469.03
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 475.16
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 97.21
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 160.85
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "087cc160-e694-49bd-b155-bef37c32718b",
+    "total": 3242.39,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 55 #123, Col. Centro",
+    "latitud": 19.229591,
+    "longitud": -99.428899,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 55,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 77.63
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 229.64
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 119.24
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "a01bbf94-5d74-4226-88ae-b642bf99ab6c",
+    "total": 783.82,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 56 #123, Col. Centro",
+    "latitud": 19.239997,
+    "longitud": -99.359259,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 56,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 391.91
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "13c827db-2012-440d-ba51-88b09d2929fb",
+    "total": 248.49,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 57 #123, Col. Centro",
+    "latitud": 19.218701,
+    "longitud": -99.455021,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 57,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 248.49
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "ea59b566-e66d-483e-8f54-a4e1e09e1205",
+    "total": 2957.95,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 58 #123, Col. Centro",
+    "latitud": 19.956562,
+    "longitud": -99.047302,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 58,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 12.63
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 408.13
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "e1739f7f-b475-44e0-b029-ccf82eab311b",
+    "total": 1833.45,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 59 #123, Col. Centro",
+    "latitud": 19.847228,
+    "longitud": -99.206123,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 59,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 366.69
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "e0639a7b-8a77-4b9b-81df-72337912088d",
+    "total": 3314.8,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 60 #123, Col. Centro",
+    "latitud": 19.979616,
+    "longitud": -99.185717,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 60,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 331.48
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "4cda45b1-856b-4956-b8c1-4756c7c6b367",
+    "total": 1289.17,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 61 #123, Col. Centro",
+    "latitud": 19.808702,
+    "longitud": -99.452586,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 61,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 173.37
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 49.79
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "f6eb1d17-53da-4379-b084-9e7898694f05",
+    "total": 2939.28,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 62 #123, Col. Centro",
+    "latitud": 19.407961,
+    "longitud": -99.379546,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 62,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 232.94
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 481.77
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 56.11
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "6b83d700-a9a1-4565-8ead-0cff1e043b72",
+    "total": 5738.06,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 63 #123, Col. Centro",
+    "latitud": 19.967485,
+    "longitud": -99.419529,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 63,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 205.86
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 187.51
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 396.12
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 203.5
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "14d20f45-ec12-4a0a-bb79-13a9aa567d40",
+    "total": 1316.35,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 64 #123, Col. Centro",
+    "latitud": 19.335023,
+    "longitud": -99.414353,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 64,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 263.27
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "6db433b5-afc2-4de3-831d-6c2ddd9ab1b5",
+    "total": 7572.03,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 65 #123, Col. Centro",
+    "latitud": 19.9483,
+    "longitud": -99.480706,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 65,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 106.06
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 215.69
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 415.86
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 475.59
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "6cd40061-3816-4c0a-a079-2624ad796577",
+    "total": 98.79,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 66 #123, Col. Centro",
+    "latitud": 19.883284,
+    "longitud": -99.337417,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 66,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 98.79
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "51c6a6b2-40f5-4ed8-b2be-6a286d7229eb",
+    "total": 3322.82,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 67 #123, Col. Centro",
+    "latitud": 19.801281,
+    "longitud": -99.167358,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 67,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 238.5
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 395.24
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 94.46
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "351cf7e7-4164-452c-85a9-891dcdc2a333",
+    "total": 757.24,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 68 #123, Col. Centro",
+    "latitud": 19.671433,
+    "longitud": -99.325154,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 68,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 189.31
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "786202d6-cef9-4da8-8f96-7101bb6e3223",
+    "total": 966.03,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 69 #123, Col. Centro",
+    "latitud": 19.301296,
+    "longitud": -99.080558,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 69,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 322.01
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "b050636d-9886-4086-8d4c-29436cb67139",
+    "total": 1464.95,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 70 #123, Col. Centro",
+    "latitud": 19.444047,
+    "longitud": -99.381497,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 70,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 154.57
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 101.7
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 449.77
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "8a536ff8-6df0-4f0e-a802-523d72d9ec78",
+    "total": 7984.73,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 71 #123, Col. Centro",
+    "latitud": 19.762567,
+    "longitud": -99.091732,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 71,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 489.44
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 214.34
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 312.71
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 190.21
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "33bdc2b3-4b16-4801-b8ab-2210dd8b7e47",
+    "total": 5912.87,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 72 #123, Col. Centro",
+    "latitud": 19.474307,
+    "longitud": -99.099826,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 72,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 393.28
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 389.67
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 346.28
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "fcc300d7-cd14-40f4-9a4b-991dacca90db",
+    "total": 8713.69,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 73 #123, Col. Centro",
+    "latitud": 19.904276,
+    "longitud": -99.095677,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 73,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 385.84
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 183.47
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 173.93
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 325.83
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "280e6bf0-3654-4ff3-a0ad-86180d01d180",
+    "total": 5260.41,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 74 #123, Col. Centro",
+    "latitud": 19.942398,
+    "longitud": -99.494777,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 74,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 473.8
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 218.24
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 416.13
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "b0d1b8eb-4a64-44fe-a543-2e5253b22b16",
+    "total": 4466.87,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 75 #123, Col. Centro",
+    "latitud": 19.1629,
+    "longitud": -99.109536,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 75,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 51.0
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 352.57
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 136.1
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 251.97
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "2dba3bfc-b5ec-4e09-870a-a4a54fc0fbd1",
+    "total": 3090.47,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 76 #123, Col. Centro",
+    "latitud": 19.505884,
+    "longitud": -99.165207,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 76,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 314.25
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 351.71
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "f52a2388-97ea-4a3d-8f2d-ecbe1e8dac73",
+    "total": 4268.44,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 77 #123, Col. Centro",
+    "latitud": 19.411321,
+    "longitud": -99.10586,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 77,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 376.45
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 251.97
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "6842ead9-7b73-4b60-8fd4-56c62dce96c2",
+    "total": 2255.28,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 78 #123, Col. Centro",
+    "latitud": 19.673593,
+    "longitud": -99.371894,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 78,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 267.7
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 190.51
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 454.59
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 84.79
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "09497329-5f16-4069-9889-5ea0bce086d5",
+    "total": 5410.6,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 79 #123, Col. Centro",
+    "latitud": 19.321144,
+    "longitud": -99.141739,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 79,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 391.27
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 279.5
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 351.62
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 276.43
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "2164c1a4-6900-42b5-b3f5-f61f8b85a9d0",
+    "total": 2021.8,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 80 #123, Col. Centro",
+    "latitud": 19.010436,
+    "longitud": -99.084142,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 80,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 404.36
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "43e16918-6fae-45e6-a550-57c22098958d",
+    "total": 4670.26,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 81 #123, Col. Centro",
+    "latitud": 19.775252,
+    "longitud": -99.418126,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 81,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 463.81
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 57.91
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 261.66
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "95e7206b-188d-481a-926c-805aadaf270d",
+    "total": 3337.1,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 82 #123, Col. Centro",
+    "latitud": 19.119851,
+    "longitud": -99.387949,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 82,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 319.99
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 17.15
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "231a017c-8191-42f8-9525-fac3d88977e0",
+    "total": 3590.81,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 83 #123, Col. Centro",
+    "latitud": 19.539439,
+    "longitud": -99.024335,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 83,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 305.42
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 425.71
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "41951964-841e-4e17-8b32-78694896526b",
+    "total": 5327.36,
+    "claveCliente": "CLI002",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 84 #123, Col. Centro",
+    "latitud": 19.348242,
+    "longitud": -99.154945,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 84,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 312.06
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 166.63
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 240.81
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "1ab92f42-c6bc-4385-a553-9525bba67bb0",
+    "total": 4757.07,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 85 #123, Col. Centro",
+    "latitud": 19.012402,
+    "longitud": -99.387564,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 85,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 112.54
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 334.23
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 166.15
+      },
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 206.51
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "98088e06-01d7-4855-bfd4-09fece3d308a",
+    "total": 3280.32,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 86 #123, Col. Centro",
+    "latitud": 19.53457,
+    "longitud": -99.494113,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 86,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 410.04
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "ba7f43f9-f87a-4efe-b04c-083db6694e61",
+    "total": 1448.1,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 87 #123, Col. Centro",
+    "latitud": 19.666464,
+    "longitud": -99.236112,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 87,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 289.62
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "7d0791fa-590a-4829-b34a-a75dd325a209",
+    "total": 476.52,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 88 #123, Col. Centro",
+    "latitud": 19.619036,
+    "longitud": -99.032946,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 88,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 119.13
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "ee15ee14-651f-4915-965b-cc20b6b747c2",
+    "total": 7044.56,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 89 #123, Col. Centro",
+    "latitud": 19.630894,
+    "longitud": -99.349712,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 89,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 50.46
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 95.11
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 262.94
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 472.41
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "ccf5bb3e-bb2a-4fbf-8845-dce5d77f0f45",
+    "total": 4858.84,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 90 #123, Col. Centro",
+    "latitud": 19.63894,
+    "longitud": -99.328169,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 90,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 365.7
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 205.36
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 74.61
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "9895dc52-93d6-4cd4-b1ac-01867e4edc12",
+    "total": 2591.73,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 91 #123, Col. Centro",
+    "latitud": 19.093488,
+    "longitud": -99.035027,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 91,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 28.68
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 352.99
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 159.32
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 205.42
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "1c92ea30-e77d-42ec-88a7-7dc597d809c8",
+    "total": 369.59,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 92 #123, Col. Centro",
+    "latitud": 19.212939,
+    "longitud": -99.249396,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 92,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 369.59
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "1d600fe2-4fd0-45a3-8407-9604bae19e99",
+    "total": 3857.34,
+    "claveCliente": "CLI001",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 93 #123, Col. Centro",
+    "latitud": 19.599082,
+    "longitud": -99.325946,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 93,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 359.92
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 248.82
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 129.86
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "a8b7aa37-dd7f-4a63-b3f0-133d2bde129b",
+    "total": 9240.84,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 94 #123, Col. Centro",
+    "latitud": 19.543336,
+    "longitud": -99.427599,
+    "metodoPago": 2,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 94,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 478.17
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 277.0
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 440.65
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 127.72
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "6095697c-53b1-481c-af10-ed75ef7cfc6e",
+    "total": 6807.07,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 95 #123, Col. Centro",
+    "latitud": 19.203202,
+    "longitud": -99.283393,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 95,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 2,
+        "precioUnitario": 482.22
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 257.89
+      },
+      {
+        "productoId": 1,
+        "cantidad": 10,
+        "precioUnitario": 324.4
+      },
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 116.81
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente2@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "0272df6f-d38b-41b0-b410-02ead851250c",
+    "total": 5444.95,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 96 #123, Col. Centro",
+    "latitud": 19.387446,
+    "longitud": -99.291417,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 96,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 420.16
+      },
+      {
+        "productoId": 1,
+        "cantidad": 8,
+        "precioUnitario": 160.75
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 125.87
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 336.74
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente3@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "38c49ffc-d0a1-4938-956a-18b7a7c02156",
+    "total": 2214.64,
+    "claveCliente": "CLI003",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 97 #123, Col. Centro",
+    "latitud": 19.357728,
+    "longitud": -99.455487,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 1,
+    "merma": 0,
+    "consecutivo": 97,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 400.75
+      },
+      {
+        "productoId": 1,
+        "cantidad": 1,
+        "precioUnitario": 386.58
+      },
+      {
+        "productoId": 1,
+        "cantidad": 3,
+        "precioUnitario": 475.77
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente4@empresa.com",
+    "claveAgente": "AGT001",
+    "captureId": "da96860a-3018-42a1-ad48-a90a3dfc3b17",
+    "total": 1582.08,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 98 #123, Col. Centro",
+    "latitud": 19.520961,
+    "longitud": -99.303604,
+    "metodoPago": 1,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 98,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 395.52
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente5@empresa.com",
+    "claveAgente": "AGT002",
+    "captureId": "f5eec624-61b6-41f4-a147-5c6c215eda31",
+    "total": 4484.78,
+    "claveCliente": "CLI005",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 99 #123, Col. Centro",
+    "latitud": 19.353895,
+    "longitud": -99.392933,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 99,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 493.77
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 328.6
+      },
+      {
+        "productoId": 1,
+        "cantidad": 7,
+        "precioUnitario": 81.0
+      },
+      {
+        "productoId": 1,
+        "cantidad": 5,
+        "precioUnitario": 59.94
+      }
+    ]
+  },
+  {
+    "usuarioCorreo": "agente1@empresa.com",
+    "claveAgente": "AGT003",
+    "captureId": "6aaacd9d-640e-4677-b209-8b239ac80b19",
+    "total": 2403.01,
+    "claveCliente": "CLI004",
+    "fecha": "2026-07-18",
+    "direccionEnvio": "Calle 100 #123, Col. Centro",
+    "latitud": 19.122294,
+    "longitud": -99.00806,
+    "metodoPago": 0,
+    "devolucion": 0,
+    "promocion": 0,
+    "merma": 0,
+    "consecutivo": 100,
+    "detalles": [
+      {
+        "productoId": 1,
+        "cantidad": 9,
+        "precioUnitario": 117.13
+      },
+      {
+        "productoId": 1,
+        "cantidad": 6,
+        "precioUnitario": 128.44
+      },
+      {
+        "productoId": 1,
+        "cantidad": 4,
+        "precioUnitario": 144.55
+      }
+    ]
+  }
+]

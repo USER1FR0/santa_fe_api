@@ -1,0 +1,6 @@
+### Sincronizar 100 compras del día
+POST http://localhost:8081/API/v1/compras/sincronizar
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< compras_100.json
