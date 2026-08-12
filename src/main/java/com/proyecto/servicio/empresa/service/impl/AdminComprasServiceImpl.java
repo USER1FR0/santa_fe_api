@@ -16,6 +16,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,6 +29,7 @@ public class AdminComprasServiceImpl implements AdminComprasService {
     private ComprasRepository comprasRepository;
 
     @Override
+    @Transactional(readOnly = true)
     public BusquedaComprasAdminResponse listarCompras(FiltroComprasAdminRequest request) {
         BusquedaComprasAdminResponse response = new BusquedaComprasAdminResponse();
         try {
@@ -67,6 +69,7 @@ public class AdminComprasServiceImpl implements AdminComprasService {
     }
 
     @Override
+    @Transactional
     public GenericResponse validarCompra(ValidarCompraRequest request) {
         GenericResponse response = new GenericResponse();
         try {
