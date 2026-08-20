@@ -55,6 +55,7 @@ public class AdminComprasServiceImpl implements AdminComprasService {
             }
 
             List<CompraAdminResponse> compras = pagina.getContent().stream().map(this::mapToResponse).toList();
+            log.info("entra a consumir servicio de compra:{}",compras.stream().count());
             response.setCompras(compras);
             response.setTotalPaginas(pagina.getTotalPages());
             response.setTotalElementos(pagina.getTotalElements());

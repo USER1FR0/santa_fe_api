@@ -2,10 +2,14 @@ package com.proyecto.servicio.empresa.service;
 
 import com.proyecto.servicio.empresa.entity.sf.Compras;
 import com.proyecto.servicio.empresa.entity.sf.DetalleCompra;
+import com.proyecto.servicio.empresa.entity.sf.UserProduct;
+import com.proyecto.servicio.empresa.entity.sf.Usuario;
 import com.proyecto.servicio.empresa.model.request.SincronizarComprasRequest;
 import com.proyecto.servicio.empresa.model.response.GenericResponse;
 import com.proyecto.servicio.empresa.repositorys.sf.ComprasRepository;
 import com.proyecto.servicio.empresa.repositorys.sf.DetalleCompraRepository;
+import com.proyecto.servicio.empresa.repositorys.sf.UserProductRepository;
+import com.proyecto.servicio.empresa.repositorys.sf.UsuarioRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -23,6 +28,12 @@ public class ComprasService {
 
     @Autowired
     private DetalleCompraRepository detalleCompraRepository;
+
+    @Autowired
+    private UserProductRepository userProductRepository;
+
+    @Autowired
+    private UsuarioRepository usuarioRepository;
 
     @Transactional
     public GenericResponse sincronizarCompras(List<SincronizarComprasRequest> comprasList) {
@@ -65,6 +76,7 @@ public class ComprasService {
                     detalle.setCantidad(detalleReq.getCantidad());
                     detalle.setPrecioUnitario(detalleReq.getPrecioUnitario());
                     detalles.add(detalle);
+                    descuentaProducto(req.getUsuarioCorreo(),detalle.getProductoId(),detalle.getCantidad());
                 }
                 detalleCompraRepository.saveAll(detalles);
 
@@ -81,5 +93,38 @@ public class ComprasService {
         }
 
         return response;
+    }
+
+    private void descuentaProducto(String correo, Long idProducto, Integer cantidad) {
+
+        if (correo == null) {
+            return;
+        }
+
+        Optional<Usuario> usuario = usuarioRepository.findByCorreo(correo);
+
+        if (usuario.isEmpty()) {
+            return;
+        }
+
+        Optional<UserProduct> producto =
+                userProductRepository.findByUserIdAndProductoId(
+                        usuario.get().getId(),
+                        idProducto);
+
+        if (producto.isEmpty()) {
+            return;
+        }
+
+        UserProduct product = producto.get();
+
+        if (product.getCantidad() < cantidad) {
+            throw new IllegalArgumentException(
+                    "Inventario insuficiente");
+        }
+
+        product.setCantidad(product.getCantidad() - cantidad);
+        log.info("peoducto prueba");
+        userProductRepository.save(product);
     }
 }

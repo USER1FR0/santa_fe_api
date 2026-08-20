@@ -21,5 +21,5 @@ public class Presentacion {
     private String etiqueta;
 
     @Column(name = "activo")
-    private Boolean activo = true;
+    private Integer activo ;
 }

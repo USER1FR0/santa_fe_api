@@ -36,7 +36,7 @@ public class PresentacionServiceImpl implements PresentacionService {
             presentacion.setGramos(request.getGramos());
             String etiqueta = request.getEtiqueta() != null ? request.getEtiqueta() : request.getGramos() + "g";
             presentacion.setEtiqueta(etiqueta);
-            presentacion.setActivo(request.getActivo() != null ? request.getActivo() : true);
+            presentacion.setActivo(request.getActivo() ? 1 : 0);
             presentacionRepository.save(presentacion);
             mapToResponse(presentacion, response);
             response.setCodigo(0);
@@ -62,7 +62,7 @@ public class PresentacionServiceImpl implements PresentacionService {
             Presentacion presentacion = opt.get();
             if (request.getGramos() != null) presentacion.setGramos(request.getGramos());
             if (request.getEtiqueta() != null) presentacion.setEtiqueta(request.getEtiqueta());
-            if (request.getActivo() != null) presentacion.setActivo(request.getActivo());
+            if (request.getActivo() != null) presentacion.setActivo(request.getActivo()?1:0);
             presentacionRepository.save(presentacion);
             mapToResponse(presentacion, response);
             response.setCodigo(0);
@@ -102,7 +102,7 @@ public class PresentacionServiceImpl implements PresentacionService {
         try {
             List<Presentacion> lista = presentacionRepository.findAll();
             List<PresentacionResponse> presentaciones = lista.stream()
-                    .filter(p -> !soloActivas || Boolean.TRUE.equals(p.getActivo()))
+                    .filter(p -> (soloActivas&&p.getActivo().equals(1)) ||(!soloActivas&&p.getActivo().equals(0)))
                     .map(p -> {
                         PresentacionResponse dto = new PresentacionResponse();
                         mapToResponse(p, dto);
@@ -123,6 +123,6 @@ public class PresentacionServiceImpl implements PresentacionService {
         dto.setId(p.getId());
         dto.setGramos(p.getGramos());
         dto.setEtiqueta(p.getEtiqueta());
-        dto.setActivo(p.getActivo());
+        dto.setActivo(p.getActivo().equals(1)?true:false);
     }
 }
