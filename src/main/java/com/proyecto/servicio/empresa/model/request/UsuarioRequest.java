@@ -37,4 +37,11 @@ public class UsuarioRequest {
     private String claveAgente;
 
     private String descripcion;
+    @NotEmpty(message = "La clave sucursal no puede estar vacía")
+    @NotNull(message = "La clave sucursal no puede ser nulo")
+    @Pattern(
+            regexp = "^[0-9]{3}$",
+            message = "La clave de agente debe contener exactamente 3 dígitos"
+    )
+    private String sucursal;
 }

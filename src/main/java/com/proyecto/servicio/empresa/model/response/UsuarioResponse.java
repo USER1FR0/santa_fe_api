@@ -20,4 +20,5 @@ public class UsuarioResponse extends GenericResponse{
     private String rol;
     private String claveAgente;
     private String descripcion;
+    private String claveSucursal;
 }

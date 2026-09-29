@@ -16,7 +16,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Slf4j
@@ -42,6 +44,8 @@ public class ComprasService {
         int omitidas = 0;
 
         try {
+            Map<String, Integer> consecutivoPorUsuario = new HashMap<>();
+
             for (SincronizarComprasRequest req : comprasList) {
                 if (comprasRepository.existsByCaptureId(req.getCaptureId())) {
                     omitidas++;
@@ -63,8 +67,20 @@ public class ComprasService {
                 compra.setDevolucion(req.getDevolucion() != null ? req.getDevolucion() : 0);
                 compra.setPromocion(req.getPromocion() != null ? req.getPromocion() : 0);
                 compra.setMerma(req.getMerma() != null ? req.getMerma() : 0);
-                compra.setConsecutivo(req.getConsecutivo() != null ? req.getConsecutivo() : 0);
                 compra.setValidado(0);
+
+                Optional<Usuario> usuarioOpt = usuarioRepository.findByCorreo(req.getUsuarioCorreo());
+                if (usuarioOpt.isPresent() && usuarioOpt.get().getClaveSucursal() != null
+                        && !usuarioOpt.get().getClaveSucursal().isBlank()) {
+                    int siguiente = consecutivoPorUsuario.computeIfAbsent(
+                            req.getUsuarioCorreo(),
+                            correo -> comprasRepository.findMaxConsecutivoByUsuarioCorreo(correo) + 1
+                    );
+                    compra.setConsecutivo(siguiente);
+                    consecutivoPorUsuario.put(req.getUsuarioCorreo(), siguiente + 1);
+                } else {
+                    compra.setConsecutivo(0);
+                }
 
                 Compras compraGuardada = comprasRepository.save(compra);
 
@@ -124,7 +140,7 @@ public class ComprasService {
         }
 
         product.setCantidad(product.getCantidad() - cantidad);
-        log.info("peoducto prueba");
+        log.info("Descuenta producto del usuario:{}",usuario.get().getCorreo());
         userProductRepository.save(product);
     }
 }

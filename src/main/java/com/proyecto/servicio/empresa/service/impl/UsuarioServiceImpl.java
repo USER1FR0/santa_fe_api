@@ -83,6 +83,7 @@ public class UsuarioServiceImpl implements UsuarioService {
                 usuario.setApellidoPaterno(request.getApellidoPaterno());
                 usuario.setApellidoMaterno(request.getApellidoMaterno());
                 usuario.setClaveAgente(request.getClaveAgente());
+                usuario.setClaveSucursal(request.getSucursal());
                 usuarioResponse.setCodigo(0);
                 usuarioResponse.setMensaje("Usuario registrado");
                 usuarioRepository.save(usuario);

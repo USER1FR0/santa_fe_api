@@ -34,4 +34,6 @@ public class Usuario {
     private String password;
     @Column(name = "descripcion")
     private String descripcion;
+    @Column(name = "clave_sucursal")
+    private String claveSucursal;
 }

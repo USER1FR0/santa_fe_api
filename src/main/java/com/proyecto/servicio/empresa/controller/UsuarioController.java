@@ -2,9 +2,7 @@ package com.proyecto.servicio.empresa.controller;
 
 import com.proyecto.servicio.empresa.model.request.*;
 import com.proyecto.servicio.empresa.model.response.GenericResponse;
-import com.proyecto.servicio.empresa.repositorys.sf.UsuarioRepository;
 import com.proyecto.servicio.empresa.service.UsuarioService;
-import com.proyecto.servicio.empresa.util.JwtTokenUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;

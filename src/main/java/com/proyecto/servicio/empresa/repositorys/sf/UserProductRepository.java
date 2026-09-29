@@ -27,4 +27,7 @@ public interface UserProductRepository extends JpaRepository<UserProduct, Long> 
             @Param("userId") Long userId,
             @Param("productId") Long productId
     );
+
+    @Query("SELECT up FROM UserProduct up JOIN FETCH up.producto")
+    List<UserProduct> findAllWithProducto();
 }

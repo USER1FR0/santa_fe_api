@@ -3,9 +3,13 @@ package com.proyecto.servicio.empresa.service.impl;
 import com.proyecto.servicio.empresa.entity.sf.Compras;
 import com.proyecto.servicio.empresa.entity.sf.DetalleCompra;
 import com.proyecto.servicio.empresa.entity.sf.ProductoApp;
+import com.proyecto.servicio.empresa.entity.sf.UserProduct;
+import com.proyecto.servicio.empresa.entity.sf.Usuario;
 import com.proyecto.servicio.empresa.model.request.ExcelExportRequest;
 import com.proyecto.servicio.empresa.repositorys.sf.ComprasRepository;
 import com.proyecto.servicio.empresa.repositorys.sf.ProductoAppRepository;
+import com.proyecto.servicio.empresa.repositorys.sf.UserProductRepository;
+import com.proyecto.servicio.empresa.repositorys.sf.UsuarioRepository;
 import com.proyecto.servicio.empresa.service.ExcelExportService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.*;
@@ -18,8 +22,10 @@ import java.io.ByteArrayOutputStream;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -39,6 +45,12 @@ public class ExcelExportServiceImpl implements ExcelExportService {
 
     @Autowired
     private ProductoAppRepository productoAppRepository;
+
+    @Autowired
+    private UserProductRepository userProductRepository;
+
+    @Autowired
+    private UsuarioRepository usuarioRepository;
 
     @Override
     @Transactional(readOnly = true)
@@ -78,6 +90,51 @@ public class ExcelExportServiceImpl implements ExcelExportService {
                     ProductoApp producto = productosMap.get(detalle.getProductoId());
                     llenarFila(sheet.createRow(rowNum++), compra, detalle, producto);
                 }
+            }
+
+            workbook.write(out);
+            return out.toByteArray();
+        }
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public byte[] generarExcelProductosAsignados() throws Exception {
+        List<UserProduct> asignaciones = userProductRepository.findAllWithProducto();
+        log.info("Generando Excel para {} productos asignados", asignaciones.size());
+
+        List<Long> userIds = asignaciones.stream()
+            .map(UserProduct::getUserId)
+            .distinct()
+            .collect(Collectors.toList());
+
+        Map<Long, String> correosMap = usuarioRepository.findByIdIn(userIds)
+            .stream()
+            .collect(Collectors.toMap(Usuario::getId, Usuario::getCorreo));
+
+        String[] headers = {"Usuario Correo", "Producto", "Cantidad Inicial", "Cantidad Actual"};
+
+        try (Workbook workbook = new XSSFWorkbook();
+             ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+
+            Sheet sheet = workbook.createSheet("Productos Asignados");
+            CellStyle headerStyle = crearEstiloEncabezado(workbook);
+
+            Row headerRow = sheet.createRow(0);
+            for (int i = 0; i < headers.length; i++) {
+                Cell cell = headerRow.createCell(i);
+                cell.setCellValue(headers[i]);
+                cell.setCellStyle(headerStyle);
+                sheet.setColumnWidth(i, 25 * 256);
+            }
+
+            int rowNum = 1;
+            for (UserProduct up : asignaciones) {
+                Row row = sheet.createRow(rowNum++);
+                row.createCell(0).setCellValue(correosMap.getOrDefault(up.getUserId(), ""));
+                row.createCell(1).setCellValue(up.getProducto().getNombreProduct());
+                row.createCell(2).setCellValue(up.getInitialQuantity() != null ? up.getInitialQuantity() : 0);
+                row.createCell(3).setCellValue(up.getCantidad() != null ? up.getCantidad() : 0);
             }
 
             workbook.write(out);
@@ -153,6 +210,154 @@ public class ExcelExportServiceImpl implements ExcelExportService {
         } else {
             cell.setCellValue(valor.toString());
         }
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public byte[] generarExcelReporteVentas(ExcelExportRequest request) throws Exception {
+        List<Compras> compras = obtenerCompras(request);
+        log.info("Generando reporte de ventas para {} compras", compras.size());
+
+        // Estadísticas por producto: [vendidas, credito, promocion, merma]
+        Map<Long, int[]> statsMap = new LinkedHashMap<>();
+        // Montos por producto: [totalEfectivo, totalElectronico, totalCredito]
+        Map<Long, double[]> amountsMap = new LinkedHashMap<>();
+
+        for (Compras compra : compras) {
+            if (compra.getDetalles() == null || compra.getDetalles().isEmpty()) continue;
+            for (DetalleCompra detalle : compra.getDetalles()) {
+                Long pid = detalle.getProductoId();
+                statsMap.putIfAbsent(pid, new int[4]);
+                amountsMap.putIfAbsent(pid, new double[3]);
+
+                int[] s = statsMap.get(pid);
+                double[] a = amountsMap.get(pid);
+                int cant = detalle.getCantidad() != null ? detalle.getCantidad() : 0;
+                double precio = detalle.getPrecioUnitario() != null ? detalle.getPrecioUnitario() : 0.0;
+                double subtotal = cant * precio;
+
+                s[0] += cant;
+
+                int metodoPago = compra.getMetodoPago() != null ? compra.getMetodoPago() : 0;
+                if (metodoPago == 0) {
+                    a[0] += subtotal;
+                } else if (metodoPago == 1) {
+                    a[1] += subtotal;
+                } else if (metodoPago == 2) {
+                    s[1] += cant;
+                    a[2] += subtotal;
+                }
+
+                if (compra.getPromocion() != null && compra.getPromocion() == 1) s[2] += cant;
+                if (compra.getMerma() != null && compra.getMerma() == 1) s[3] += cant;
+            }
+        }
+
+        List<Long> productIds = new java.util.ArrayList<>(statsMap.keySet());
+        Map<Long, ProductoApp> productosMap = productoAppRepository.findAllById(productIds)
+            .stream()
+            .collect(Collectors.toMap(ProductoApp::getId, p -> p));
+
+        // Cantidades iniciales/finales desde UserProduct (si hay usuario filtrado)
+        Map<Long, UserProduct> userProductMap = new java.util.HashMap<>();
+        if (request.getUsuarioCorreo() != null && !request.getUsuarioCorreo().isBlank()) {
+            Optional<Usuario> usuarioOpt = usuarioRepository.findByCorreo(request.getUsuarioCorreo());
+            if (usuarioOpt.isPresent()) {
+                userProductRepository.findByUserId(usuarioOpt.get().getId())
+                    .forEach(up -> userProductMap.put(up.getProducto().getId(), up));
+            }
+        }
+
+        String[] headers = {
+            "Producto", "Precio Unitario", "Vendidas", "Credito", "Promocion", "Merma",
+            "Total Efectivo", "Total Electrónico", "Total Venta Credito",
+            "Cantidad Inicial del Día", "Cantidad Final del Día"
+        };
+
+        try (Workbook workbook = new XSSFWorkbook();
+             ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+
+            Sheet sheet = workbook.createSheet("Reporte de Ventas");
+            CellStyle headerStyle = crearEstiloEncabezado(workbook);
+            CellStyle totalesStyle = crearEstiloTotales(workbook);
+
+            Row headerRow = sheet.createRow(0);
+            for (int i = 0; i < headers.length; i++) {
+                Cell cell = headerRow.createCell(i);
+                cell.setCellValue(headers[i]);
+                cell.setCellStyle(headerStyle);
+                sheet.setColumnWidth(i, 22 * 256);
+            }
+
+            int rowNum = 1;
+            double sumEfectivo = 0, sumElectronico = 0, sumCredito = 0;
+
+            for (Long pid : productIds) {
+                ProductoApp producto = productosMap.get(pid);
+                int[] s = statsMap.get(pid);
+                double[] a = amountsMap.get(pid);
+                UserProduct up = userProductMap.get(pid);
+
+                Row row = sheet.createRow(rowNum++);
+                row.createCell(0).setCellValue(producto != null ? producto.getNombreProduct() : "");
+                row.createCell(1).setCellValue(producto != null && producto.getPrecio() != null ? producto.getPrecio() : 0.0);
+                row.createCell(2).setCellValue(s[0]);
+                row.createCell(3).setCellValue(s[1]);
+                row.createCell(4).setCellValue(s[2]);
+                row.createCell(5).setCellValue(s[3]);
+                row.createCell(6).setCellValue(a[0]);
+                row.createCell(7).setCellValue(a[1]);
+                row.createCell(8).setCellValue(a[2]);
+                row.createCell(9).setCellValue(up != null && up.getInitialQuantity() != null ? up.getInitialQuantity() : 0);
+                row.createCell(10).setCellValue(up != null && up.getCantidad() != null ? up.getCantidad() : 0);
+
+                sumEfectivo += a[0];
+                sumElectronico += a[1];
+                sumCredito += a[2];
+            }
+
+            // Fila TOTALES
+            Row totalesRow = sheet.createRow(rowNum++);
+            Cell totalesLabel = totalesRow.createCell(0);
+            totalesLabel.setCellValue("TOTALES");
+            totalesLabel.setCellStyle(totalesStyle);
+            for (int i = 1; i <= 5; i++) {
+                totalesRow.createCell(i).setCellStyle(totalesStyle);
+            }
+            Cell cEfectivo = totalesRow.createCell(6);
+            cEfectivo.setCellValue(sumEfectivo);
+            cEfectivo.setCellStyle(totalesStyle);
+            Cell cElectronico = totalesRow.createCell(7);
+            cElectronico.setCellValue(sumElectronico);
+            cElectronico.setCellStyle(totalesStyle);
+            Cell cCredito = totalesRow.createCell(8);
+            cCredito.setCellValue(sumCredito);
+            cCredito.setCellStyle(totalesStyle);
+
+            // Fila TOTAL GENERAL
+            Row totalGeneralRow = sheet.createRow(rowNum);
+            Cell tgLabel = totalGeneralRow.createCell(0);
+            tgLabel.setCellValue("TOTAL GENERAL");
+            tgLabel.setCellStyle(totalesStyle);
+            Cell tgValor = totalGeneralRow.createCell(1);
+            tgValor.setCellValue(sumEfectivo + sumElectronico + sumCredito);
+            tgValor.setCellStyle(totalesStyle);
+
+            workbook.write(out);
+            return out.toByteArray();
+        }
+    }
+
+    private CellStyle crearEstiloTotales(Workbook workbook) {
+        CellStyle style = workbook.createCellStyle();
+        Font font = workbook.createFont();
+        font.setBold(true);
+        style.setFont(font);
+        style.setFillForegroundColor(IndexedColors.LIGHT_YELLOW.getIndex());
+        style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+        style.setBorderBottom(BorderStyle.THIN);
+        style.setBorderTop(BorderStyle.THIN);
+        return style;
     }
 
     private CellStyle crearEstiloEncabezado(Workbook workbook) {
