@@ -224,6 +224,7 @@ public class ExcelExportServiceImpl implements ExcelExportService {
         Map<Long, double[]> amountsMap = new LinkedHashMap<>();
 
         for (Compras compra : compras) {
+
             if (compra.getDetalles() == null || compra.getDetalles().isEmpty()) continue;
             for (DetalleCompra detalle : compra.getDetalles()) {
                 Long pid = detalle.getProductoId();
@@ -236,20 +237,31 @@ public class ExcelExportServiceImpl implements ExcelExportService {
                 double precio = detalle.getPrecioUnitario() != null ? detalle.getPrecioUnitario() : 0.0;
                 double subtotal = cant * precio;
 
-                s[0] += cant;
+
 
                 int metodoPago = compra.getMetodoPago() != null ? compra.getMetodoPago() : 0;
-                if (metodoPago == 0) {
+                boolean promocion = compra.getPromocion() != null && compra.getPromocion() == 1;
+                boolean merma = compra.getMerma() != null && compra.getMerma() == 1;
+                boolean devolucion = compra.getDevolucion() != null && compra.getDevolucion() == 1;
+                if (metodoPago == 0 && !merma && !promocion && !devolucion) {
+                    s[0] += cant;
                     a[0] += subtotal;
-                } else if (metodoPago == 1) {
+                }else if (metodoPago == 1 && !merma && !promocion && !devolucion) {
+                    s[0] += cant;
                     a[1] += subtotal;
-                } else if (metodoPago == 2) {
+                } else if (metodoPago == 2&& !merma && !promocion && !devolucion) {
                     s[1] += cant;
                     a[2] += subtotal;
                 }
+                if (promocion) {
+                    s[2] += cant;
+                }
 
-                if (compra.getPromocion() != null && compra.getPromocion() == 1) s[2] += cant;
-                if (compra.getMerma() != null && compra.getMerma() == 1) s[3] += cant;
+                if (merma) {
+                    s[3] += cant;
+                }
+
+
             }
         }
 
