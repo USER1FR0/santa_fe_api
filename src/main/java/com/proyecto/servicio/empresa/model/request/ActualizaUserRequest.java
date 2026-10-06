@@ -16,6 +16,7 @@ public class ActualizaUserRequest {
     private String apellidoMaterno;
     @Email
     private String nuevoCorreo;
+    private String sucursal;
     @Email
     @NotBlank(message = "El correo actual no puede estar vacío")
     private String correo;

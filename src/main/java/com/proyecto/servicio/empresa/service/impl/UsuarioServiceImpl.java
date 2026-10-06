@@ -171,6 +171,7 @@ public class UsuarioServiceImpl implements UsuarioService {
              userOptional.setApellidoMaterno(request.getApellidoMaterno()!=null?request.getApellidoMaterno():userOptional.getApellidoMaterno());
              userOptional.setApellidoPaterno(request.getApellidoPaterno()!=null?request.getApellidoPaterno():userOptional.getApellidoPaterno());
              userOptional.setClaveAgente(request.getClaveAgente()!=null?request.getClaveAgente():userOptional.getClaveAgente());
+             userOptional.setClaveSucursal(request.getSucursal()!=null? request.getSucursal() : userOptional.getClaveSucursal());
              usuarioRepository.save(userOptional);
              usuarioResponse.setMensaje("Usuario actualizado");
              usuarioResponse.setCodigo(0);
