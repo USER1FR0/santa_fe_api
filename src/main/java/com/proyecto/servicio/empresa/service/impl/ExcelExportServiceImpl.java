@@ -229,7 +229,7 @@ public class ExcelExportServiceImpl implements ExcelExportService {
             for (DetalleCompra detalle : compra.getDetalles()) {
                 Long pid = detalle.getProductoId();
                 statsMap.putIfAbsent(pid, new int[4]);
-                amountsMap.putIfAbsent(pid, new double[3]);
+                amountsMap.putIfAbsent(pid, new double[4]);
 
                 int[] s = statsMap.get(pid);
                 double[] a = amountsMap.get(pid);
@@ -257,8 +257,9 @@ public class ExcelExportServiceImpl implements ExcelExportService {
                     s[2] += cant;
                 }
 
-                if (merma) {
+                if (devolucion) {
                     s[3] += cant;
+                    a[3] += subtotal;
                 }
 
 
@@ -281,7 +282,7 @@ public class ExcelExportServiceImpl implements ExcelExportService {
         }
 
         String[] headers = {
-            "Producto", "Precio Unitario", "Vendidas", "Credito", "Promocion", "Merma",
+            "Producto", "Precio Unitario", "Vendidas", "Credito", "Promocion", "Devolucion","Monto producto Devuelto",
             "Total Efectivo", "Total Electrónico", "Total Venta Credito",
             "Cantidad Inicial del Día", "Cantidad Final del Día"
         };
@@ -302,7 +303,7 @@ public class ExcelExportServiceImpl implements ExcelExportService {
             }
 
             int rowNum = 1;
-            double sumEfectivo = 0, sumElectronico = 0, sumCredito = 0;
+            double sumEfectivo = 0, sumElectronico = 0, sumCredito = 0, sumDevolucion = 0;
 
             for (Long pid : productIds) {
                 ProductoApp producto = productosMap.get(pid);
@@ -317,15 +318,17 @@ public class ExcelExportServiceImpl implements ExcelExportService {
                 row.createCell(3).setCellValue(s[1]);
                 row.createCell(4).setCellValue(s[2]);
                 row.createCell(5).setCellValue(s[3]);
-                row.createCell(6).setCellValue(a[0]);
-                row.createCell(7).setCellValue(a[1]);
-                row.createCell(8).setCellValue(a[2]);
-                row.createCell(9).setCellValue(up != null && up.getInitialQuantity() != null ? up.getInitialQuantity() : 0);
-                row.createCell(10).setCellValue(up != null && up.getCantidad() != null ? up.getCantidad() : 0);
+                row.createCell(6).setCellValue(a[3]);
+                row.createCell(7).setCellValue(a[0]);
+                row.createCell(8).setCellValue(a[1]);
+                row.createCell(9).setCellValue(a[2]);
+                row.createCell(10).setCellValue(up != null && up.getInitialQuantity() != null ? up.getInitialQuantity() : 0);
+                row.createCell(11).setCellValue(up != null && up.getCantidad() != null ? up.getCantidad() : 0);
 
                 sumEfectivo += a[0];
                 sumElectronico += a[1];
                 sumCredito += a[2];
+                sumDevolucion += a[3];
             }
 
             // Fila TOTALES
@@ -336,13 +339,15 @@ public class ExcelExportServiceImpl implements ExcelExportService {
             for (int i = 1; i <= 5; i++) {
                 totalesRow.createCell(i).setCellStyle(totalesStyle);
             }
-            Cell cEfectivo = totalesRow.createCell(6);
+            Cell cDevolucion = totalesRow.createCell(6);
+            cDevolucion.setCellValue(sumDevolucion);
+            Cell cEfectivo = totalesRow.createCell(7);
             cEfectivo.setCellValue(sumEfectivo);
             cEfectivo.setCellStyle(totalesStyle);
-            Cell cElectronico = totalesRow.createCell(7);
+            Cell cElectronico = totalesRow.createCell(8);
             cElectronico.setCellValue(sumElectronico);
             cElectronico.setCellStyle(totalesStyle);
-            Cell cCredito = totalesRow.createCell(8);
+            Cell cCredito = totalesRow.createCell(9);
             cCredito.setCellValue(sumCredito);
             cCredito.setCellStyle(totalesStyle);
 
@@ -352,7 +357,7 @@ public class ExcelExportServiceImpl implements ExcelExportService {
             tgLabel.setCellValue("TOTAL GENERAL");
             tgLabel.setCellStyle(totalesStyle);
             Cell tgValor = totalGeneralRow.createCell(1);
-            tgValor.setCellValue(sumEfectivo + sumElectronico + sumCredito);
+            tgValor.setCellValue(sumEfectivo + sumElectronico + sumCredito-sumDevolucion);
             tgValor.setCellStyle(totalesStyle);
 
             workbook.write(out);

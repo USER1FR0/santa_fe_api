@@ -92,7 +92,10 @@ public class ComprasService {
                     detalle.setCantidad(detalleReq.getCantidad());
                     detalle.setPrecioUnitario(detalleReq.getPrecioUnitario());
                     detalles.add(detalle);
-                    descuentaProducto(req.getUsuarioCorreo(),detalle.getProductoId(),detalle.getCantidad());
+                    if(req.getDevolucion()!=1 || req.getMerma()!=1){
+                        descuentaProducto(req.getUsuarioCorreo(),detalle.getProductoId(),detalle.getCantidad());
+                    }
+
                 }
                 detalleCompraRepository.saveAll(detalles);
 
